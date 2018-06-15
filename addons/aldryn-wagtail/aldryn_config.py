@@ -26,7 +26,7 @@ class Form(forms.BaseForm):
             'modelcluster',
             'taggit',
         ])
-        settings['MIDDLEWARE_CLASSES'].extend([
+        settings['MIDDLEWARE'].extend([
             'wagtail.core.middleware.SiteMiddleware',
             'wagtail.contrib.redirects.middleware.RedirectMiddleware',
         ])
