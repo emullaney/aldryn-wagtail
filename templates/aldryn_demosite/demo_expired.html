@@ -1,0 +1,35 @@
+{% extends "base_root.html" %}
+{% load i18n cms_tags static sekizai_tags %}
+
+{% block title %}Demo Expired{% endblock %}
+{% block meta_tags %}{% endblock %}
+
+{% block body_class %}tpl-demo-expired{% endblock %}
+{% block extend_root %}
+<div class="spacer"></div>
+<div class="container">
+    <div class="panel panel-body">
+        <div class="row promo-modal text-center">
+            <h3>Your demo website has expired!</h3>
+            <div class="col-sm-12 promo-modal-text">
+                <img src="{% static 'img/aldryn-black.svg' %}" width="255" alt="Aldryn"/>
+                <p class="text-center">The easiest way to build and manage<br><strong>your django CMS projects</strong></p>
+                <ul class="list-unstyled text-left">
+                    <li>Launch a django CMS websites in two minutes</li>
+                    <li>Real time overview of all your running projects</li>
+                    <li>Zero effort deployment</li>
+                    <li>Simple cloud hosting for django CMS projects</li>
+                    <li>Easy setup of test and live instances</li>
+                    <li>Use your own Python/Django code</li>
+                </ul>
+            </div>
+            <div class="col-sm-12 text-center promo-signup">
+                <h3>With Aldryn you can use django CMS for as long as you want</h3>
+                <p>Get your free Aldryn account</p><br>
+                <a href="https://login.aldryn.com/register/" class="btn btn-default btn-lg">Get started</a><br><br>
+                <small class="text-info-credit-card">No credit card required</small>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

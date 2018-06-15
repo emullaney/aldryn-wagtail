@@ -1,0 +1,10 @@
+{% extends 'wagtailadmin/admin_base.html' %}
+{% load divio_demo %}
+
+{% block extra_js %}
+    {% get_demo_mode as demo_mode %}
+    {% if demo_mode %}
+        <script src="https://static.aldryn.com/js/demo/dist/demo.js" data-divio-demo="1"
+            data-position="bottom-right"></script>
+    {% endif %}
+{% endblock %}
